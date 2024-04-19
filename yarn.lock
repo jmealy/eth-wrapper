@@ -454,6 +454,13 @@
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.10.2.tgz#053f1540703faa81dea2966b768ee5581c66aeda"
   integrity sha512-hw437iINopmQuxWPSUEvqE56NCPsiU8N4AYtfHmJFckclktzK9YQJieD3XkDCDH4OjL+C7zgPUh73R/nrcHrqw==
 
+"@safe-global/safe-apps-react-sdk@^4.7.1":
+  version "4.7.1"
+  resolved "https://registry.yarnpkg.com/@safe-global/safe-apps-react-sdk/-/safe-apps-react-sdk-4.7.1.tgz#3df442496edee9778ef7217ee78a031cac0e1701"
+  integrity sha512-sbVroIUxYy9XOzN7769wCTR2ytk6LMp8ECmFlc+d23/7EHOuX5Yw8Si+tf5SYbYhS9ygdSsMcVRQeNvKOhZnEw==
+  dependencies:
+    "@safe-global/safe-apps-sdk" "^9.0.0"
+
 "@safe-global/safe-apps-sdk@^9.0.0":
   version "9.0.0"
   resolved "https://registry.yarnpkg.com/@safe-global/safe-apps-sdk/-/safe-apps-sdk-9.0.0.tgz#56635663f5a73773c5929d9c45ffea2b75dab69b"
