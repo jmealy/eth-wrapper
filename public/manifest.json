@@ -1,0 +1,12 @@
+{
+  "short_name": "eth-wrapper",
+  "name": "Eth Wrapper",
+  "description": "Wrap ETH and unwrap WETH",
+  "icons": [
+    {
+      "src": "/images/app-logo.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+}
