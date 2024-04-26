@@ -1,9 +1,8 @@
 "use client";
-import css from "./page.module.css";
-import { InputAdornment, Paper, TextField, Typography } from "@mui/material";
-import { useState, ChangeEvent, useCallback } from "react";
-import InputForm from "@/components/Input";
+import { Typography } from "@mui/material";
 import { useIsSafeApp } from "@/hooks/useIsSafeApp";
+import WrapEth from "@/components/WrapEth";
+import SafeProvider from "@safe-global/safe-apps-react-sdk";
 
 export default function Home() {
   const isSafeApp = useIsSafeApp();
@@ -13,9 +12,8 @@ export default function Home() {
   }
 
   return (
-    <>
-      <InputForm isWrap={true} />
-      <InputForm isWrap={false} />
-    </>
+    <SafeProvider>
+      <WrapEth />;
+    </SafeProvider>
   );
 }

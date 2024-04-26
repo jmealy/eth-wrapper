@@ -12,7 +12,13 @@ import {
 } from "@mui/material";
 import { useState, ChangeEvent, useCallback } from "react";
 
-export default function InputForm({ isWrap }: { isWrap: boolean }) {
+export default function InputForm({
+  isWrap,
+  balance,
+}: {
+  isWrap: boolean;
+  balance: string;
+}) {
   const [amount, setAmount] = useState("0");
   const [amountError, setAmountError] = useState<string | undefined>(undefined);
 
@@ -26,7 +32,9 @@ export default function InputForm({ isWrap }: { isWrap: boolean }) {
 
   return (
     <Paper className={css.container}>
-      <Typography>{isWrap ? "ETH " : "WETH "} balance:</Typography>
+      <Typography>
+        {isWrap ? "ETH " : "WETH "} balance: {balance}
+      </Typography>
       <Box display="flex">
         <TextField
           variant="outlined"
